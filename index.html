@@ -22,6 +22,27 @@
     <title>Tip calculator app</title>
   </head>
   <body>
+    <h1>Splitter</h1>
+
+    <main class="flex-container">
+      <section class="select-section">
+        <div class="bill-container">
+          <label for="bill">Bill</label>
+          <input type="number" name="bill" id="bill" />
+        </div>
+        <div class="tip-select">
+          <div class="buttons-container"></div>
+          <input class="btn tip-btn" type="button" value="5%" />
+          <input class="btn tip-btn" type="button" value="10%" />
+          <input class="btn tip-btn" type="button" value="15%" />
+          <input class="btn tip-btn" type="button" value="25%" />
+          <input class="btn tip-btn" type="button" value="50%" />
+          <input class="btn tip-btn custom-tip" type="button" value="" />
+        </div>
+      </section>
+      <section class="calculation-section"></section>
+    </main>
+
     Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
     person Total / person Reset
 
