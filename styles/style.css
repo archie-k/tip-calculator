@@ -1,8 +1,51 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Space Mono", monospace;
 }
 
 body {
   font-family: "Space Mono", monospace;
+  background-color: var(--light-grayish);
+}
+
+input {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.flex-container {
+  display: flex;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.select-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  background: var(--very-dark-cyan);
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 30px;
+  color: var(--white);
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+:hover .btn {
+  cursor: pointer;
 }
