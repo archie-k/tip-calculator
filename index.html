@@ -22,50 +22,52 @@
   </head>
   <body>
     <h1>Splitter</h1>
+    <div class="center-container">
+      <main class="flex-container">
+        <section class="select-section">
+          <div class="bill-container container">
+            <label for="bill text-content">Bill</label>
+            <input type="number" name="bill" id="bill" />
+          </div>
+          <div class="tip-select">
+            <p class="text-content">Select Tip %</p>
+            <div class="tip-btn-container">
+              <input class="btn tip-5" type="button" value="5%" />
+              <input class="btn tip-10" type="button" value="10%" />
+              <input class="btn tip-15" type="button" value="15%" />
+              <input class="btn tip-25" type="button" value="25%" />
+              <input class="btn tip-50" type="button" value="50%" />
+              <input class="btn-tip-custom" type="button" value="Custom" />
+            </div>
+          </div>
+          <div class="number-of-people container">
+            <label for="people text-content">Number of People</label>
+            <input type="number" name="" id="people" />
+          </div>
+        </section>
+        <section class="result-section">
+          <div class="tip-amount">
+            <div class="tip-amount-text">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amount-result">
+              <span>$0.00</span>
+            </div>
+          </div>
 
-    <main class="flex-container">
-      <section class="select-section">
-        <div class="bill-container">
-          <label for="bill">Bill</label>
-          <input type="number" name="bill" id="bill" />
-        </div>
-        <div class="tip-select">
-          <div class="tip-btn-container">
-            <input class="btn tip-5" type="button" value="5%" />
-            <input class="btn tip-10" type="button" value="10%" />
-            <input class="btn tip-15" type="button" value="15%" />
-            <input class="btn tip-25" type="button" value="25%" />
-            <input class="btn tip-50" type="button" value="50%" />
-            <input class="btn-tip-custom" type="button" value="Custom" />
+          <div class="total">
+            <div>
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div>
+              <span class="total-price"> $0.00</span>
+            </div>
           </div>
-        </div>
-        <div class="number-of-people">
-          <label for="people">Number of People</label>
-          <input type="number" name="" id="people" />
-        </div>
-      </section>
-      <section class="result-section">
-        <div class="tip-amount">
-          <div class="tip-amount-text">
-            <p>Tip Amount</p>
-            <p>/ person</p>
-          </div>
-          <div class="tip-amount-result">
-            <span>$0.00</span>
-          </div>
-        </div>
-
-        <div class="total">
-          <div>
-            <p>Total</p>
-            <p>/ person</p>
-          </div>
-          <div>
-            <span class="total-price"> $0.00</span>
-          </div>
-        </div>
-        <input class="reset-btn" type="button" value="RESET" />
-      </section>
-    </main>
+          <input class="reset-btn" type="button" value="RESET" />
+        </section>
+      </main>
+    </div>
   </body>
 </html>
