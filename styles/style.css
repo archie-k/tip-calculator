@@ -41,24 +41,27 @@ h1 {
   flex-direction: column;
 }
 
-.select-section {
+.tip-section {
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  width: 50%;
 }
 
 .result-section {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .tip-btn-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
 .btn {
-  width: 100px;
+  width: 110px;
   background: var(--very-dark-cyan);
   border: 0;
   border-radius: 5px;
@@ -66,6 +69,18 @@ h1 {
   color: var(--white);
   font-size: 1.175rem;
   letter-spacing: 0.1rem;
+}
+
+.input-tip-custom {
+  width: 110px;
+  border: 0px;
+  background: var(--very-light-grayish-cyan);
+}
+
+.input-tip-custom::placeholder {
+  color: var(--dark-greyish-cyan);
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 :hover .btn {
