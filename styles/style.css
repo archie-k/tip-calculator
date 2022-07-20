@@ -4,14 +4,14 @@
   padding: 0;
   font-family: "Space Mono", monospace;
 }
-
+/* Remove default spinner arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Firefox */
+/* Remove in arrows in Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
 }
@@ -31,9 +31,14 @@ h1 {
   letter-spacing: 0.3rem;
 }
 
+.logo {
+  margin-bottom: 40px;
+}
+
 .center-container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -41,7 +46,7 @@ h1 {
 .flex-container {
   display: flex;
   background: var(--white);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 30px;
   max-width: 800px;
   /* height: 410px; */
@@ -64,7 +69,7 @@ h1 {
   flex-direction: column;
   width: 50%;
   background-color: var(--very-dark-cyan);
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 35px 20px;
   gap: 20px;
 }
@@ -100,6 +105,10 @@ h1 {
   text-align: center;
 }
 
+.bill-input:focus {
+  border: 1px solid var(--strong-cyan);
+}
+
 :hover .btn {
   cursor: pointer;
 }
@@ -120,6 +129,18 @@ h1 {
   border: 0;
   border-radius: 5px;
   background-color: var(--very-light-grayish-cyan);
+}
+
+#bill {
+  background: var(--very-light-grayish-cyan) url(/images/icon-dollar.svg) left
+    no-repeat;
+  background-position: 15px center;
+}
+
+#people {
+  background: var(--very-light-grayish-cyan) url(/images/icon-person.svg) left
+    no-repeat;
+  background-position: 15px center;
 }
 
 .total-value,
@@ -147,7 +168,7 @@ h1 {
 
 .reset-btn {
   padding: 8px 0px;
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 1.275rem;
   border: 0;
   border-radius: 5px;
