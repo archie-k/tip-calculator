@@ -174,9 +174,11 @@ h1 {
   padding: 8px 0px;
   margin-top: 90px;
   font-size: 1.275rem;
+  color: var(--dark-greyish-cyan);
   border: 0;
   border-radius: 5px;
   background: var(--grayish-cyan);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
