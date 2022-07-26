@@ -9,9 +9,10 @@ const totalPrice = document.querySelector(".total-price");
 const tipPerPerson = document.querySelector(".tip-per-person");
 
 for (const button of tipButtons) {
-  button.addEventListener("focus", () => {
+  button.addEventListener("click", () => {
     billInput.value;
     console.log(button);
+    button.style.color = "red";
   });
 }
 
@@ -19,18 +20,26 @@ let selectedTip;
 let billValue;
 let numberOfPeople;
 
+let resetingInputs = () => {
+  billInput.value = "";
+  numOfPeopleInput.value = "";
+};
+
+let calculateTip = () => {
+  let tip = (billInput.value * selectedTip) / numOfPeople;
+  return tip;
+};
+
 billInput.addEventListener("blur", () => {
   billValue = Number(billInput.value);
 });
 
 numOfPeopleInput.addEventListener("blur", () => {
   numberOfPeople = Number(numOfPeopleInput.value);
+  console.log(numberOfPeople);
 });
 
-let calculateTip = () => {
-  let tip = (billInput.value * selectedTip) / numOfPeople;
-  return tip;
-};
+resetButton.addEventListener("click", resetingInputs);
 
 let calculateTotal = () => {
   return;
